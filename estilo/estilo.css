@@ -1,0 +1,102 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    font-style: oblique;
+}
+
+.fondoH {
+    background-image: url(./fondo\ pagina.jpg);
+    background-repeat: repeat-x;
+    background-position: 20px;
+    background-color: black;
+    height: 157px;
+}
+
+.colorHea {
+    font-size: larger;
+    text-align: center;
+    text-decoration: none;
+}
+
+.estiloLetra {
+    font-style: oblique;
+}
+
+.colorMain {
+    background-color: rgb(155, 249, 218);
+    height: max-content;
+}
+
+.colorFooter {
+    background-color: rgb(29, 194, 194);
+}
+
+.imgProducto {
+    display: flex;
+    align-items: center;
+    border: solid;
+}
+
+.nombreProducto {
+    text-align: center;
+    color: rebeccapurple;
+    font-size: medium;
+}
+
+.center {
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+    transform: scale(.9);
+}
+
+.barraBuscadora {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 40px;
+    width: 420px;
+    border: solid rgb(0, 52, 241);
+}
+
+.gridConteiner {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    height: 92%;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-areas:
+        "logo"
+        "nav"
+        "imgp"
+        "txtprod"
+        "videopage"
+        "footer"
+}
+
+.logopagina {
+    grid-area: logo;
+}
+
+.navegadores {
+    grid-area: nav;
+}
+
+.imgp {
+    grid-area: imgp;
+}
+
+.estiloLetra {
+    grid-area: txtprod;
+}
+
+i iframe {
+    grid-area: videopage;
+}
+
+footer {
+    grid-area: footer;
+}
+
+@media screen and (max-width:768px){}
+  
